@@ -7,6 +7,9 @@
   "modern": "dist/dom-context-hooks.modern.js",
   "source": "dom-context-hooks.ts",
   "types": "dist/dom-context-hooks.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "microbundle",
     "test": "echo \"Error: no test specified\" && exit 1"
