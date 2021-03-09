@@ -15,6 +15,14 @@ import {
 import debugFactory from "debug";
 const debug = debugFactory("useDomContext");
 
+/**
+ * Create a new context.
+ *
+ * Unlike React context, this object is just a helper and NOT a unique key. The `name` used here MUST be unique.
+ *
+ * @param name a unique global event name used for the `dom-context` listeners
+ * @param initial the initial value used by providers
+ */
 export function createContext<T>(name: string, initial?: T) {
   const raw = rawCreate(name, initial);
 
@@ -85,7 +93,7 @@ type NewState<T> = T | ((previousState?: T) => T);
 type StateUpdater<T> = (value: NewState<T>) => void;
 
 /**
- * Similar to `useState` except the state is shared with children
+ * Similar to `useState` except the state is shared with children `dom-context` listeners
  */
 export function useDomContextState<T>(
   host: HTMLElement,
