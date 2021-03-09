@@ -1,0 +1,22 @@
+{
+  "name": "@saasquatch/dom-context-hooks",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/dom-context-hooks.js",
+  "module": "dist/dom-context-hooks.module.js",
+  "modern": "dist/dom-context-hooks.modern.js",
+  "source": "dom-context-hooks.ts",
+  "types": "dist/dom-context-hooks.d.ts",
+  "scripts": {
+    "build": "microbundle",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "microbundle": "0.13.0"
+  },
+  "dependencies": {
+    "@saasquatch/universal-hooks": "^0.1.3"
+  },
+  "author": "SaaSquatch",
+  "license": "ISC"
+}
