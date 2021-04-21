@@ -1,7 +1,7 @@
 {
   "name": "@saasquatch/dom-context-hooks",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hooks for making use of dom-context while using hooks from universal-hooks rather than stencil-hooks",
   "main": "dist/dom-context-hooks.js",
   "module": "dist/dom-context-hooks.module.js",
   "modern": "dist/dom-context-hooks.modern.js",
