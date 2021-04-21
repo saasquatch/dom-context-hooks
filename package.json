@@ -1,6 +1,6 @@
 {
   "name": "@saasquatch/dom-context-hooks",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "dist/dom-context-hooks.js",
   "module": "dist/dom-context-hooks.module.js",
@@ -18,7 +18,8 @@
     "microbundle": "0.13.0"
   },
   "dependencies": {
-    "@saasquatch/universal-hooks": "^0.1.3"
+    "@saasquatch/universal-hooks": "^1.0.0",
+    "dom-context": "^1.0.1"
   },
   "author": "SaaSquatch",
   "license": "ISC"
