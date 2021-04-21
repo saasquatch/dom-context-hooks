@@ -21,6 +21,14 @@
     "@saasquatch/universal-hooks": "^1.0.0",
     "dom-context": "^1.0.1"
   },
-  "author": "SaaSquatch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saasquatch/dom-context-hooks.git"
+  },
+  "author": "SaaSquatch Team",
+  "bugs": {
+    "url": "https://github.com/saasquatch/dom-context-hooks"
+  },
+  "homepage": "https://github.com/saasquatch/dom-context-hooks",
   "license": "ISC"
 }
