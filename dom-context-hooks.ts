@@ -64,13 +64,19 @@ export function useDomContext<T = unknown>(
       initialContextValue.current = next;
       setState(next);
     };
-    const l = new ContextListener({
-      contextName,
-      element: host,
-      onChange,
-      ...options,
-    });
-    l.start();
+    let l;
+    try {
+      l = new ContextListener({
+        contextName,
+        element: host,
+        onChange,
+        ...options,
+      });
+      l.start();
+    } catch (error) {
+      debug("Listener failed to start", error);
+    }
+
     debug("Listener initialized", l);
     return {
       listener: l,
