@@ -1,6 +1,6 @@
 {
   "name": "@saasquatch/dom-context-hooks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hooks for making use of dom-context while using hooks from universal-hooks",
   "main": "dist/dom-context-hooks.js",
   "module": "dist/dom-context-hooks.module.js",
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@saasquatch/universal-hooks": "^1.0.0",
-    "dom-context": "^1.0.1"
+    "dom-context": "^1.2.0"
   },
   "repository": {
     "type": "git",
