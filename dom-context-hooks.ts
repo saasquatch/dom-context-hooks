@@ -61,7 +61,7 @@ export function useDomContext<T = unknown>(
 
   const { listener } = useMemo(() => {
     const onChange = (next: T) => {
-      initialContextValue.current = next;
+      if (initialContextValue) initialContextValue.current = next;
       setState(next);
     };
     let l;
@@ -92,7 +92,7 @@ export function useDomContext<T = unknown>(
     };
   }, [listener, host.isConnected]);
 
-  return state || initialContextValue.current;
+  return state || initialContextValue?.current;
 }
 
 type NewState<T> = T | ((previousState?: T) => T);

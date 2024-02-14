@@ -1,6 +1,6 @@
 {
   "name": "@saasquatch/dom-context-hooks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Hooks for making use of dom-context while using hooks from universal-hooks",
   "main": "dist/dom-context-hooks.js",
   "module": "dist/dom-context-hooks.module.js",
